@@ -1,7 +1,7 @@
 #pragma once
 #include<string.h>
 #include<iostream>
-const size_t MAX_SIZE = 100;
+const size_t SEQUNCE_LIST_MAX_SIZE = 100;
 const size_t ERROR_INDEX = 101;
 using namespace std;
 
@@ -9,7 +9,7 @@ template<class ElemType>
 class SequnceList {
 public:
 	SequnceList() {
-		_Data = (ElemType*)malloc(sizeof(ElemType) * MAX_SIZE);
+		_Data = (ElemType*)malloc(sizeof(ElemType) * SEQUNCE_LIST_MAX_SIZE);
 		_lastData = nullptr;
 		_length = 0;
 	}
@@ -24,7 +24,7 @@ public:
 
 	SequnceList(int size, ElemType elem) {
 		//_Data = new ElemType[MAX_SIZE];
-		_Data = (ElemType*)malloc(sizeof(ElemType)*MAX_SIZE);
+		_Data = (ElemType*)malloc(sizeof(ElemType)* SEQUNCE_LIST_MAX_SIZE);
 		if (!_Data)return;
 		for (size_t i = 0; i < size; ++i) {
 			_Data[i] = elem;

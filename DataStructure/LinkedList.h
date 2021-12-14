@@ -22,9 +22,11 @@ public:
 				cur = cur->_Next;
 			}
 			Node tmp = (Node)malloc(sizeof(LinkedList));
-			tmp->_Elem = elem;
-			cur->_Next = tmp;
-			tmp->_Next = nullptr;
+			if (tmp != nullptr) {
+				tmp->_Elem = elem;
+				cur->_Next = tmp;
+				tmp->_Next = nullptr;
+			}
 		}
 		_Length = n;
 		_Head = head;
@@ -38,10 +40,12 @@ public:
 			cur = cur->_Next;
 		}
 		Node tmp = (Node)malloc(sizeof(LinkedList));
-		tmp->_Elem = elem;
-		cur->_Next = tmp;
-		_Length++;
-		tmp->_Next = nullptr;
+		if (tmp != nullptr) {
+			tmp->_Elem = elem;
+			cur->_Next = tmp;
+			_Length++;
+			tmp->_Next = nullptr;
+		}
 	}
 
 	//头插法
@@ -87,11 +91,13 @@ public:
 		while (cur) {
 			if (cur == pos) {
 				Node tmp = (Node)malloc(sizeof(LinkedList));
-				tmp->_Next = cur->_Next;
-				cur->_Next = tmp;
-				tmp->_Elem = elem;
-				_Length++;
-				return true;
+				if (tmp != nullptr) {
+					tmp->_Next = cur->_Next;
+					cur->_Next = tmp;
+					tmp->_Elem = elem;
+					_Length++;
+					return true;
+				}
 			}
 			cur = cur->_Next;
 		}
@@ -99,25 +105,28 @@ public:
 	}
 
 	bool InsertFront(Node pos, ElemType elem) {
-		if (!_Head|!pos)return false;
+		if (!_Head||!pos)return false;
 		Node cur = _Head;
 		for (; cur->_Next != pos; cur = cur->_Next); //移动到cur->Next=pos处
 		Node tmp = (Node)malloc(sizeof(LinkedList));
-		tmp->_Next = cur->_Next;
-		cur->_Next = tmp;
-		tmp->_Elem = elem;
-		_Length++;
+		if (tmp != nullptr) {
+			tmp->_Next = cur->_Next;
+			cur->_Next = tmp;
+			tmp->_Elem = elem;
+			_Length++;
+		}
 		return true;
 	}
 
 
 	bool EraseElem(Node pos) {
-		if (!_Head | !pos)return false;
+		if (!_Head || !pos)return false;
 		Node cur = _Head;
 		for (; cur->_Next != pos; cur = cur->_Next);
 		cur->_Next = pos->_Next;
 		free(pos);
 		_Length--;
+		return true;
 	}
 
 	ElemType GetElem()const {

@@ -1,6 +1,6 @@
 #include "LinkedList.h"
 #include "SequnceList.h"
-
+#include "StaticList.h"
 
 void SequnceListTest() {
 	SequnceList<int>l(10, 10);
@@ -53,7 +53,42 @@ void LinkedListTest() {
 	l.DisplayLinkedList();
 }
 
-int main() {
 
+void StaticListTest() {
+	StaticList<int> l;
+	l.InitList();
+	l.InsertFront(1,10);
+	l.InsertFront(2,20);
+	l.InsertFront(3,30);
+	l.InsertFront(4, 25);
+	l.InsertFront(4, 50);
+	l.InsertFront(3, 10);
+	l.InsertBack(1, 55);
+	l.InsertBack(1, 56);
+	l.DisplayStaticList();
+	cout << "--------------------------\n";
+	size_t i = l.FindElem(80);
+	if (i != ERROR_INDEX) {
+		cout << "i:" << i << endl;
+	}
+	else {
+		cout << "ERRORINDEX\n";
+	}
+	int elem = l.GetElemAtIndex(1);
+	cout << "elem:" << elem << endl;
+	l.ModifyElemAtIndex(1, 999);
+	l.DisplayStaticList();
+	//l.DeleteElemAtIndex(1);
+	//l.DeleteElemAtIndex(3);
+	//l.DisplayStaticList();
+	//cout << "length:" << l.GetLength() << endl;
+
+}
+
+
+
+
+int main() {
+	StaticListTest();
 	return 0;
 }
