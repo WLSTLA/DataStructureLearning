@@ -118,7 +118,6 @@ public:
 		return true;
 	}
 
-
 	bool EraseElem(Node pos) {
 		if (!_Head || !pos)return false;
 		Node cur = _Head;

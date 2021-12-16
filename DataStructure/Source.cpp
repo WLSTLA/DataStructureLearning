@@ -1,6 +1,9 @@
 #include "LinkedList.h"
 #include "SequnceList.h"
 #include "StaticList.h"
+#include "CycleList.h"
+#include "DoubleList.h"
+#include "DoubleCircularList.h"
 
 void SequnceListTest() {
 	SequnceList<int>l(10, 10);
@@ -32,7 +35,6 @@ void SequnceListTest() {
 	}
 }
 
-
 void LinkedListTest() {
 	LinkedList<int>l;
 	l.CreateLinkedList(10, 5);
@@ -52,7 +54,6 @@ void LinkedListTest() {
 	l.EraseElem(ptr);
 	l.DisplayLinkedList();
 }
-
 
 void StaticListTest() {
 	StaticList<int> l;
@@ -85,10 +86,66 @@ void StaticListTest() {
 
 }
 
+void CycleListTest() {
+	CycleList<int>l(10);
+	l.printfList();
+}
+
+void DoubleListTest() {
+	DoubleList<int>l(10,5);
+	l.ForeachListForward();
+	cout << endl;
+	//l.InsertAtIndexFront(10, 20);
+	l.InsertAtIndexRear(1, 10000);
+	l.ForeachListForward();
+	cout << endl;
+	//l.EraseElemAtIndex(1);
+	//l.EraseElemAtIndex(10);
+	
+	//l.EraseElememts(3);
+	//l.ForeachListForward();
+	//l.ForeachListForward();
+
+	size_t index1 = l.FindElemInverse(3);
+	size_t index2 = l.FindElemReverse(3);
+	if (index1 != ERROR_DOUBLELIST_INDEX) {
+		cout << "FindElemInverse 3 Index:" << index1 << endl;
+	}
+	if (index2 != ERROR_DOUBLELIST_INDEX) {
+		cout << "FindElemReverse 3 Index:" << index2 << endl;
+	}
 
 
+	l.ModifyElements(3, 999);
+	l.ModifyElemAtIndex(1, 7865);
+	l.ForeachListForward();
+}
+
+void DoubleCircularTest() {
+	DoubleCircularList<int> l;
+	l.CreateList(10);
+//	l.printListForward();
+//	l.printListReverse();
+	l.InsertElemFront(1, 999);
+	l.ModifyElemAtIndex(2, 1080);
+	size_t length = l.GetLength();
+	l.InsertElemRear(length, 12000);
+	cout << "FindElem(12000):" << l.FindElem(12000) << endl;
+	cout << "GetElem(1):" << l.GetElem(1) << endl;
+	length = l.GetLength();
+	//l.InsertElemFront(length, 5555);
+	l.printListForward();
+	l.DeleteElemAtIndex(12);
+	l.printListForward();
+	l.printListReverse();
+
+
+}
 
 int main() {
-	StaticListTest();
+	//StaticListTest();
+	//CycleListTest();
+	//DoubleListTest();
+	DoubleCircularTest();
 	return 0;
 }
