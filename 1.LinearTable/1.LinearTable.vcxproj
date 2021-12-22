@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{36d2f15e-245f-41f6-a791-79828dd84529}</ProjectGuid>
-    <RootNamespace>DataStructure</RootNamespace>
+    <ProjectGuid>{cd86bc26-4df2-47ef-a161-4cef95118f5c}</ProjectGuid>
+    <RootNamespace>My1LinearTable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>1.LinearTable</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,15 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DoubleList.h" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="G:\Project\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CycleList.h" />
-    <ClInclude Include="DoubleCircularList.h" />
-    <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="SequnceList.h" />
-    <ClInclude Include="StaticList.h" />
+    <ClInclude Include="G:\Project\CycleList.h" />
+    <ClInclude Include="G:\Project\DoubleCircularList.h" />
+    <ClInclude Include="G:\Project\DoubleList.h" />
+    <ClInclude Include="G:\Project\LinkedList.h" />
+    <ClInclude Include="G:\Project\SequnceList.h" />
+    <ClInclude Include="G:\Project\StaticList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

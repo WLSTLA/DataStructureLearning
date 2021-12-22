@@ -15,24 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DoubleList.h">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="G:\Project\Source.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SequnceList.h">
+    <ClInclude Include="G:\Project\SequnceList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="G:\Project\StaticList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CycleList.h">
+    <ClInclude Include="G:\Project\CycleList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DoubleCircularList.h">
+    <ClInclude Include="G:\Project\DoubleCircularList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Project\DoubleList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Project\LinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
