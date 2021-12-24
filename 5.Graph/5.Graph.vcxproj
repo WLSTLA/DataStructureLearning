@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{72113463-f72f-4610-b1c5-ddcf08dc9429}</ProjectGuid>
-    <RootNamespace>My4Tree</RootNamespace>
+    <ProjectGuid>{4f831585-07ea-404d-8d28-9bc907c9e77f}</ProjectGuid>
+    <RootNamespace>My5Graph</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>4.BinaryTree</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -141,14 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AVLTree.h" />
-    <ClInclude Include="BinarySearchTree.h" />
-    <ClInclude Include="BinaryTree.h" />
-    <ClInclude Include="ClueBinaryTree.h" />
-    <ClInclude Include="Heap.h" />
-    <ClInclude Include="HuffManTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,7 @@
 #include"AVLTree.h"
 #include"ClueBinaryTree.h"
 #include"HuffManTree.h"
-
+#include"Heap.h"
 
 void BinaryTreeTest() {
 	typedef BinaryTreeNode<char>* TreeNode;
@@ -137,11 +137,35 @@ void HuffTreeTest() {
 	std::cout << "树的带权路径长度为:" << s.GetTreeWPL() << "\n";
 }
 
+
+bool IntCmp(const int* val1, const int* val2) {
+	return *val1 > *val2;
+}
+
+void HeapTest() {
+	SqHeap<int> s(10,&IntCmp);
+	int arr[] = { 2,4,1,6,2,8,10,20 };
+	size_t length = sizeof(arr) / sizeof(int);
+	for (size_t i = 0; i < length; ++i) {
+		s.InsertElem(arr[i]);
+	}
+	s.printHeap();
+	std::cout << "top:" << s.GetTop() << "\n";
+
+	s.InsertElem(30);
+	s.printHeap();
+	s.Pop();
+	s.printHeap();
+	s.Pop();
+	s.printHeap();
+}
+
 int main() {
 	//BinaryTreeTest();
 	//BinarySearchTest();
 	//ClueBinaryTreeTest();
 	//AVLTreeTest();
-	HuffTreeTest();
+	//HuffTreeTest();
+	HeapTest();
 	return 0;
 }
