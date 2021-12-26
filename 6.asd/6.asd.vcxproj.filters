@@ -19,15 +19,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="NondireGraph_Matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DireGrapth_Table.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NonDirecTraverse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>
