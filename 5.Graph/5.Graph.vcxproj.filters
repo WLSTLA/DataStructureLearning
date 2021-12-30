@@ -18,6 +18,9 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MinPath_BFS.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NondireGraph_Matrix.h">
@@ -26,7 +29,22 @@
     <ClInclude Include="DireGrapth_Table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NonDirecTraverse.h">
+    <ClInclude Include="Traverse_NonDirec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MST_Prim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MST_Kruskal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Traverse_DirecGrapth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinPath_Dijkstra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinPath_Floyd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

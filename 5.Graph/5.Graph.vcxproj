@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,12 +140,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MinPath_BFS.h" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MinPath_Dijkstra.h" />
+    <ClInclude Include="MinPath_Floyd.h" />
+    <ClInclude Include="Traverse_DirecGrapth.h" />
     <ClInclude Include="DireGrapth_Table.h" />
-    <ClInclude Include="NonDirecTraverse.h" />
+    <ClInclude Include="MST_Kruskal.h" />
+    <ClInclude Include="Traverse_NonDirec.h" />
     <ClInclude Include="NondireGraph_Matrix.h" />
+    <ClInclude Include="MST_Prim.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
