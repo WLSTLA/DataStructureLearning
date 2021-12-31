@@ -1,29 +1,31 @@
 ##  数据结构
 
-​	使用C++写一遍数据结构。
+​	这是自己学习数据结构中使用纯C++实现的一个版本，实现了一些常用的数据结构，现在只有纯代码，以及少许注释，在后面会添加每个数据结构的原理详解、时间复杂度和空间复杂度分析的md文件。
 
-- 线性表
+​	实现部分仅供参考，写得不好的地方忘大佬海涵，同时觉得作者写的不错的话，可以star鼓励一下~
+
+- [线性表)](https://github.com/WLSTLA/DataStructureLearning/tree/master/1.LinearTable)
   - 单链表
   - 顺序表
   - 双向链表
   - 循环链表
   - 静态链表
   - 双向循环链表
-- 栈
+- [栈](https://github.com/WLSTLA/DataStructureLearning/tree/master/2.Stack)
   - 顺序栈
   - 链栈
-- 队列
+- [队列](https://github.com/WLSTLA/DataStructureLearning/tree/master/3.Queue)
   - 顺序队列
   - 链队列
   - 双端队列
-- 二叉树
+- [二叉树](https://github.com/WLSTLA/DataStructureLearning/tree/master/4.Tree)
   - 链式二叉树
   - 线索二叉树
   - 二叉搜索树
   - 平衡二叉树AVL
   - 哈夫曼树/最优二叉树
   - 堆
-- 图
+- [图](https://github.com/WLSTLA/DataStructureLearning/tree/master/5.Graph)
   - 存储结构
     - 有向图—邻接表
     - 无向图—邻接矩阵
@@ -37,8 +39,8 @@
     - BFS构建最短路劲
     - Dijkstra迪杰斯特拉
     - Floyd弗洛伊德
-- 并查集
-- 哈希表
+- [并查集](https://github.com/WLSTLA/DataStructureLearning/tree/master/6.DisjointSet)
+- [哈希表](https://github.com/WLSTLA/DataStructureLearning/tree/master/7.HashTable)
 - ~~字典树~~(待实现)
 - ~~多路查找树~~
   - ~~23树~~
