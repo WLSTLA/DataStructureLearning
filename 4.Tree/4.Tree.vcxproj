@@ -149,6 +149,7 @@
     <ClInclude Include="ClueBinaryTree.h" />
     <ClInclude Include="Heap.h" />
     <ClInclude Include="HuffManTree.h" />
+    <ClInclude Include="Trie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

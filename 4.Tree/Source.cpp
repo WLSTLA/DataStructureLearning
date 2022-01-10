@@ -4,6 +4,8 @@
 #include"ClueBinaryTree.h"
 #include"HuffManTree.h"
 #include"Heap.h"
+#include"Trie.h"
+
 
 void BinaryTreeTest() {
 	typedef BinaryTreeNode<char>* TreeNode;
@@ -160,12 +162,27 @@ void HeapTest() {
 	s.printHeap();
 }
 
+
+void TrieTest() {
+	Trie t;
+	t.InitTrie();
+	t.InsertStr("word");
+	t.InsertStr("hello");
+	t.InsertStr("he");
+	t.InsertStr("h");
+	t.InsertStr("hel");
+	t.InsertStr("hell");
+	std::cout << t.FindStr("asdasd") << "\n";
+	t.PrintAllPrefixSubStr("hello");
+}
+
 int main() {
 	//BinaryTreeTest();
 	//BinarySearchTest();
 	//ClueBinaryTreeTest();
 	//AVLTreeTest();
 	//HuffTreeTest();
-	HeapTest();
+	//HeapTest();
+	TrieTest();
 	return 0;
 }

@@ -286,7 +286,6 @@ protected:
 		return _IsBalanced(curNode->_lChild) && _IsBalanced(curNode->_rChild);
 	}
 
-	// 主要用于一开始创建时的插入
 	Node _InsertNode(Node curNode, ElemType elem) {
 		if (!curNode) {
 			Node newNode = new AVLTreeNode<ElemType>();

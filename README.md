@@ -25,6 +25,8 @@
   - 平衡二叉树AVL
   - 哈夫曼树/最优二叉树
   - 堆
+  - 字典树(前缀树)
+  - ~~线段树~~
 - [图](https://github.com/WLSTLA/DataStructureLearning/tree/master/5.Graph)
   - 存储结构
     - 有向图—邻接表
@@ -41,7 +43,6 @@
     - Floyd弗洛伊德
 - [并查集](https://github.com/WLSTLA/DataStructureLearning/tree/master/6.DisjointSet)
 - [哈希表](https://github.com/WLSTLA/DataStructureLearning/tree/master/7.HashTable)
-- ~~字典树~~(待实现)
 - ~~多路查找树~~
   - ~~23树~~
   - ~~234树~~
